@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 143.099 s <<< FAILURE! - in TestSuite
+com.mindtree.runner.BigSmall.sortItem  Time elapsed: 5.277 s  <<< FAILURE!
+java.lang.AssertionError: expected [Hot Seller] but found []
+	at com.mindtree.runner.BigSmall.sortItem(BigSmall.java:356)
+
+com.mindtree.runner.BigSmall.loginTest  Time elapsed: 11.995 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#customer_logout_link"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EVUMI0M', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a9e4eb503a2d7d0d33b4a6b0e2ce8fb
+*** Element info: {Using=id, value=customer_logout_link}
+	at com.mindtree.runner.BigSmall.loginTest(BigSmall.java:138)
+
+com.mindtree.runner.BigSmall.signupNewsLetter  Time elapsed: 3.162 s  <<< FAILURE!
+java.lang.AssertionError: expected [Newsletter] but found [404: Page Not Found | Mailchimp]
+	at com.mindtree.runner.BigSmall.signupNewsLetter(BigSmall.java:443)
+
